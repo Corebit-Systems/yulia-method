@@ -43,15 +43,56 @@ export default function HomePage() {
         </div>
       </section>
 
+      <section className="mt-20 max-w-5xl">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="rounded-2xl border border-neutral-200 p-8">
+            <div className="text-xs uppercase tracking-[0.3em] text-neutral-500">
+              Phase System
+            </div>
+            <p className="mt-4 text-lg leading-relaxed text-neutral-800">
+              A 4-phase sequence that turns scattered effort into a single
+              operating system.
+            </p>
+          </div>
+
+          <div className="rounded-2xl border border-neutral-200 p-8">
+            <div className="text-xs uppercase tracking-[0.3em] text-neutral-500">
+              Lesson Format
+            </div>
+            <p className="mt-4 text-lg leading-relaxed text-neutral-800">
+              Text-based lessons. No video. No noise. Clear instructions and
+              checkpoints.
+            </p>
+          </div>
+
+          <div className="rounded-2xl border border-neutral-200 p-8">
+            <div className="text-xs uppercase tracking-[0.3em] text-neutral-500">
+              Progress Logic
+            </div>
+            <p className="mt-4 text-lg leading-relaxed text-neutral-800">
+              Progress is calculated automatically. You always know what’s next.
+            </p>
+          </div>
+
+          <div className="rounded-2xl border border-neutral-200 p-8">
+            <div className="text-xs uppercase tracking-[0.3em] text-neutral-500">
+              Premium Access
+            </div>
+            <p className="mt-4 text-lg leading-relaxed text-neutral-800">
+              One product. One price. Everything unlocked. Built to feel
+              inevitable.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* PRICING BLOCK */}
       <section className="mt-32 max-w-4xl rounded-3xl border border-neutral-200 p-10">
         <div className="text-xs uppercase tracking-[0.3em] text-neutral-500">
           Full Access
         </div>
 
-        <div className="mt-4 text-3xl md:text-4xl font-medium">
-          €799
-        </div>
+        <div className="mt-4 text-3xl md:text-4xl font-medium">€799</div>
 
         <div className="mt-10 flex gap-4">
           <a
