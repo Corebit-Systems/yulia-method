@@ -37,3 +37,45 @@ a:hover {
 h1, h2, h3 {
   letter-spacing: -0.02em;
 }
+
+@keyframes shapeInRight {
+  from {
+    transform: translateX(140px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes shapeInLeft {
+  from {
+    transform: translateX(-140px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.animate-shape-in-right {
+  animation: shapeInRight 900ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.animate-shape-in-right-delayed {
+  animation: shapeInRight 1100ms cubic-bezier(0.22, 1, 0.36, 1) 120ms both;
+}
+
+.animate-shape-in-left {
+  animation: shapeInLeft 950ms cubic-bezier(0.22, 1, 0.36, 1) 80ms both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-shape-in-right,
+  .animate-shape-in-right-delayed,
+  .animate-shape-in-left {
+    animation: none !important;
+  }
+}
